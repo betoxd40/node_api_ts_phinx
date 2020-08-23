@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
+    "esModuleInterop": true,
+    "target": "ESNext",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "lib": ["esnext", "esnext.asynciterable", "dom"],
+    "allowJs": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strict": true,
+    "sourceMap": true,
+    "rootDir": "src",
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "*": ["node_modules/*"],
+      "@models/*": ["src/database/models/*"],
+      "@repo/*": ["src/api/repo/*"],
+      "@routes/*": ["src/api/routes/*"],
+      "@constants/*": ["src/constants/*"],
+      "@utils/*": ["src/utils/*"],
+      "@app/types/*": ["src/types/*"]
+    },
+    "types": ["@types/node"]
+  },
+  "include": ["src", "src/**/*.ts"],
+  "exclude": ["node_modules"]
+}
